@@ -22,7 +22,7 @@ const plugin: JupyterFrontEndPlugin<void> = {
     const newWidget = () => {
       // Create a blank content widget inside of a MainAreaWidget
       const content = new Widget();
-      const widget = new MainAreaWidget({ content });
+      const widget = new MainAreaWidget({ content_label });
       widget.id = 'apod-jupyterlab';
       widget.title.label = 'Astronomy Picture';
       widget.title.closable = true;
